@@ -1,38 +1,44 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', 'Libre Baskerville', serif;
+    font-variant: small-caps;
 }
-body{
-    padding:10px;
+body {
+    padding: 10px;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(to top, #cfd9df, #e2ebf0);
+    background: rgb(38, 38, 38);
+    height: 100vh; 
+    margin: 0; 
 }
-.todo-app{
+.todo-app {
+    font-variant:normal;
     padding: 40px 30px 70px;
     border-radius: 50px;
     box-shadow: 0 0 30px #afafaf;
     margin: 150px auto 20px;
     max-width: 540px;
-    background: #ffff;
+    background: #92A8D1;
     width: 100%;
 }
-h2 img{
+h2 img {
     width: 40px;
     position: absolute;
     right: 0;
 }
-h2{
-    color: #002765;
+h2 {
+    color: #ffffff;
     display: flex;
     align-items: center;
     font-size: 30px;
     position: relative;
     margin-bottom: 50px;
 }
-.row{
+.row {
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -42,7 +48,7 @@ h2{
     margin-bottom: 20px;
     box-shadow: 0 0 10px #5d5d5d;
 }
-input{
+input {
     outline: none;
     border: none;
     flex: 1;
@@ -52,14 +58,13 @@ input{
     letter-spacing: 1px;
     padding: 10px;
 }
-input::placeholder{
-    color: #1e008d;
-
+input::placeholder {
+    color: #ffffff;
 }
-button{
+button {
     border: none;
     outline: none;
-    background: #26062f;
+    background: #2F2F2F;
     color: #ffff;
     padding: 16px 30px;
     font-weight: 600;
@@ -67,9 +72,8 @@ button{
     cursor: pointer;
     border-radius: 30px;
     margin: 1px;
-
 }
-ul li{
+ul li {
     list-style: none;
     font-size: 18px;
     font-weight: 500;
@@ -79,30 +83,28 @@ ul li{
     position: relative;
     user-select: none;
     margin-block: 10px;
-
 }
-ul li::before{
+ul li::before {
     position: absolute;
     content: "";
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    background: url(images/unchecked.png);
+    background: url(unchecked.png);
     background-size: cover;
     left: 8px;
     position: center;
 }
-ul li.checked{
-    background: #3700a4;
+ul li.checked {
+    background: #2b195a;
     color: #ffff;
     border-radius: 50px;
 }
-ul li.checked::before{
-    background: url(images/checked.png);
+ul li.checked::before {
+    background: url(checked.png);
     background-size: cover;
-
 }
-ul li span{
+ul li span {
     position: absolute;
     top: 10px;
     right: 0px;
@@ -115,16 +117,14 @@ ul li span{
     border-radius: 50%;
     text-align: center;
 }
-
-ul li span:hover{
-    color: #ffff;
+ul li span:hover {
+    color: #8C8372;
     background-color: #000;
 }
-ul li.checked span{
-    color: #ffff;
-
+ul li.checked span {
+    color: #8C8372;
 }
-ul li.checked span:hover{
-    background: #ffff;
+ul li.checked span:hover {
+    background: #8C8372;
     color: black;
 }
